@@ -8,7 +8,7 @@ jobs:
           - uses: trstringer/manual-approval@v1
             with:
               secret: ${{ github.TOKEN }}
-              approvers: emrullahshn
+              approvers: 'emrullahshn'
               minimum-approvals: 1
 
           - name: Deploy
