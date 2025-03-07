@@ -1,8 +1,9 @@
 permissions:
   issues: write
-  
+
 on:
     workflow_dispatch:
+    workflow_call:
 
 jobs:
     cd:
