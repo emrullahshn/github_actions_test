@@ -3,6 +3,7 @@ name: endpoints-cd-staging
 permissions:
   id-token: write # required to use OIDC authentication
   contents: read # required to check out the code from the repo
+  issues: write
 
 concurrency: endpoints-cd-staging
 
