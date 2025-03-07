@@ -1,0 +1,15 @@
+name: endpoints-cd-staging
+
+permissions:
+  id-token: write # required to use OIDC authentication
+  contents: read # required to check out the code from the repo
+
+concurrency: endpoints-cd-staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  manual:
+    uses: .github/workflows/cd.yml
+    secrets: inherit
