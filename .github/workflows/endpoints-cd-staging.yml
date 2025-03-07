@@ -11,5 +11,6 @@ on:
 
 jobs:
   manual:
-    uses: emrullahshn/github_actions_test/.github/workflows/cd.yml@master
+    uses: emrullahshn/github_actions_test/.github/workflows/cd.yml@main
+
     secrets: inherit
